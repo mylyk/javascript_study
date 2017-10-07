@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	var arr=['Array','getcomputedstyle','currentstyle','push','arguments','unshift'];
+	alert(arr.sort());
+	var arr1=[99,123,435,3,65,4,63];     /*sort只能按照字符串的顺序来排序，如何让他按照数字排序 这里就要给他一个函数*/
+	alert(arr1.sort());
+	alert(arr1.sort(function(sum1,sum2){
+		return sum1-sum2;          /*从小到大排序*/
+		return sum2-sum1;          /*从大到小排序*/
+	}));
+
+</script>	
+</body>
+</html>
